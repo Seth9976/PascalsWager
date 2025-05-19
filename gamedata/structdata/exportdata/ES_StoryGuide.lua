@@ -1,0 +1,102 @@
+﻿-- chunkname: @f:/unity/pascalswager_steam1/assets/GameData/StructData/ExportData/ES_StoryGuide.lua
+
+ES_StoryGuide = {
+	{
+		DescriptionTouch = "奉献污秽遗留物，提升祭坛赐福等级，获得属性点奖励。",
+		ShowQuestId = "",
+		MenuId = 100,
+		CompleteQuestId = "15034",
+		DescriptionKeyboard = "奉献污秽遗留物，提升祭坛赐福等级，获得属性点奖励。",
+		HideQuestId = "15034",
+		ImageId = 10021,
+		GuideId = 2001,
+		Title = "奉献",
+		DescriptionJoystick = "奉献污秽遗留物，提升祭坛赐福等级，获得属性点奖励。",
+		Forward = 0,
+		Backward = 0
+	},
+	{
+		DescriptionTouch = "得到炼金配方后，在祭坛就可以制作相应的药水或者道具。",
+		ShowQuestId = "15034",
+		MenuId = 102,
+		CompleteQuestId = "15035",
+		DescriptionKeyboard = "得到炼金配方后，在祭坛就可以制作相应的药水或者道具。",
+		HideQuestId = "15035",
+		ImageId = 0,
+		GuideId = 2002,
+		Title = "炼金",
+		DescriptionJoystick = "得到炼金配方后，在祭坛就可以制作相应的药水或者道具。",
+		Forward = 0,
+		Backward = 0
+	},
+	{
+		DescriptionTouch = "装备战利品可以获得强大的力量。\n战利品分为伤痕、抵抗、噩梦三类，只能装备在对应的位置。",
+		ShowQuestId = "",
+		MenuId = 300,
+		CompleteQuestId = "15036",
+		DescriptionKeyboard = "装备战利品可以获得强大的力量。\n战利品分为伤痕、抵抗、噩梦三类，只能装备在对应的位置。",
+		HideQuestId = "15036",
+		ImageId = 10006,
+		GuideId = 2003,
+		Title = "战利品",
+		DescriptionJoystick = "装备战利品可以获得强大的力量。\n战利品分为伤痕、抵抗、噩梦三类，只能装备在对应的位置。",
+		Forward = 0,
+		Backward = 0
+	},
+	{
+		DescriptionTouch = "在祭坛，使用秽石碎片、秽石等道具，激活天赋。\n秽石有4种：秽石碎片、秽石、秽石水晶、秽石宝钻。\n天赋越强，需要的秽石越高级。",
+		ShowQuestId = "",
+		MenuId = 400,
+		CompleteQuestId = "15037",
+		DescriptionKeyboard = "在祭坛，使用秽石碎片、秽石等道具，激活天赋。\n秽石有4种：秽石碎片、秽石、秽石水晶、秽石宝钻。\n天赋越强，需要的秽石越高级。",
+		HideQuestId = "15037",
+		ImageId = 10026,
+		GuideId = 2004,
+		Title = "激活天赋",
+		DescriptionJoystick = "在祭坛，使用秽石碎片、秽石等道具，激活天赋。\n秽石有4种：秽石碎片、秽石、秽石水晶、秽石宝钻。\n天赋越强，需要的秽石越高级。",
+		Forward = 0,
+		Backward = 0
+	},
+	{
+		DescriptionTouch = "点击左侧快捷栏，选择摆放道具的位置，然后从右侧列表中选择道具，放入快捷栏。",
+		ShowQuestId = "19008",
+		MenuId = 500,
+		CompleteQuestId = "15038",
+		DescriptionKeyboard = "按{80}开始编辑快捷栏，选择摆放道具的位置，然后从列表中选择道具，放入快捷栏。",
+		HideQuestId = "15038",
+		ImageId = 10013,
+		GuideId = 2005,
+		Title = "快速使用",
+		DescriptionJoystick = "按{80}开始编辑快捷栏，选择摆放道具的位置，然后从列表中选择道具，放入快捷栏。",
+		Forward = 2006,
+		Backward = 0
+	},
+	{
+		DescriptionTouch = "点击快捷栏，使用道具。\n长按快捷栏，切换道具。",
+		ShowQuestId = "15000",
+		MenuId = 0,
+		CompleteQuestId = "15079",
+		DescriptionKeyboard = "按{94}使用道具。\n长按{94}切换道具。",
+		HideQuestId = "15079",
+		ImageId = 10003,
+		GuideId = 2006,
+		Title = "快速使用",
+		DescriptionJoystick = "按{94}使用道具。\n长按{94}切换道具。",
+		Forward = 0,
+		Backward = 2005
+	},
+	{
+		DescriptionTouch = "强化\n消耗黑水石屑等道具强化战利品，提升战利品的属性加成。\n重铸\n献祭战利品，使主材战利品随机获得一种额外的属性加成效果。献祭战利品的品级越高，重铸获得的属性加成效果越好。",
+		ShowQuestId = "11003",
+		MenuId = 104,
+		CompleteQuestId = "15095",
+		DescriptionKeyboard = "强化\n消耗黑水石屑等道具强化战利品，提升战利品的属性加成。\n重铸\n献祭战利品，使主材战利品随机获得一种额外的属性加成效果。献祭战利品的品级越高，重铸获得的属性加成效果越好。",
+		HideQuestId = "15095",
+		ImageId = 10020,
+		GuideId = 2007,
+		Title = "强化与重铸",
+		DescriptionJoystick = "强化\n消耗黑水石屑等道具强化战利品，提升战利品的属性加成。\n重铸\n献祭战利品，使主材战利品随机获得一种额外的属性加成效果。献祭战利品的品级越高，重铸获得的属性加成效果越好。",
+		Forward = 0,
+		Backward = 0
+	}
+}

@@ -1,0 +1,63 @@
+﻿-- chunkname: @f:/unity/pascalswager_steam1/assets/GameData/PlayerDefine/Hero10004_Define.lua
+
+Hero10004_Define = {}
+Hero10004_Define.SkillType = {
+	SkillDH = 30,
+	SkillHP21 = 3,
+	SkillLHP1 = 23,
+	SkillLHP2 = 24,
+	SkillHP41 = 7,
+	SkillLP32 = 14,
+	SkillRL2 = 16,
+	SkillLP11 = 9,
+	SkillLH = 25,
+	SkillHP12 = 2,
+	SkillDLP2 = 20,
+	SkillHP42 = 8,
+	SkillHP11 = 1,
+	SkillDHP1 = 21,
+	SkillLP31 = 13,
+	SkillSP = 28,
+	SkillDL = 29,
+	SkillHP22 = 4,
+	SkillHLLL2 = 33,
+	SkillDLP1 = 19,
+	SkillRH = 26,
+	SkillHLLL1 = 32,
+	SkillDHP2 = 22,
+	SkillHP32 = 6,
+	SkillHLP = 31,
+	SkillHLLL3 = 34,
+	SkillRL1 = 15,
+	SkillLP12 = 10,
+	SkillRL32 = 18,
+	SkillRL31 = 17,
+	SkillHP31 = 5,
+	SkillLP21 = 11,
+	SkillLP22 = 12,
+	SkillRSP = 27,
+	SkillHHH = 35
+}
+Hero10004_Define.HitUpUpTimeHitTime1 = 0.066
+Hero10004_Define.HitUpUpTimeResetTime1 = 0.05
+Hero10004_Define.HitUpUpTimeHitTime2 = 0.26
+Hero10004_Define.HitUpUpTimeResetTime2 = 0
+Hero10004_Define.EquipmentCoffin = 2
+Hero10004_Define.EquipmentCoffinHand = 3
+Hero10004_Define.EquipmentLeftHand = 4
+Hero10004_Define.ExecuteExplodeTime = 0.1
+Hero10004_Define.ExecuteExplodeRadius = 3
+Hero10004_Define.ExecuteExplodeSkillAdd = 1000
+Hero10004_Define.DefenceUseRage = 10
+Hero10004_Define.SanToughnessAdd = 10
+Hero10004_Define.SanResistSubRate = 500
+Hero10004_Define.BeatBackFrameFreeze = 0.06
+Hero10004_Define.BeatBackFrameFreezeSpeed = 0
+Hero10004_Define.BeatBackFrameFadeOut = 0.06
+Hero10004_Define.BlockAddPower = 12
+Hero10004_Define.BlockAddEnergy = 300
+Hero10004_Define.CounterAttackSuccessStatusId = 10082
+Hero10004_Define.VfxName_Block_SkillSP = "vfx_10004_skill28_4"
+Hero10004_Define.VfxName_BeatBack = "vfx_10004_skill1_4_1"
+
+return Hero10004_Define

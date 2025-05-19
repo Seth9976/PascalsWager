@@ -1,0 +1,51 @@
+﻿-- chunkname: @f:/unity/pascalswager_steam1/assets/GameData/PlayerDefine/Hero20054_Define.lua
+
+Hero20054_Define = {}
+Hero20054_Define.SkillType = {
+	SkillLLL2 = 10,
+	SkillHHHH1 = 2,
+	SkillDP2 = 16,
+	SkillSP2 = 13,
+	SkillHHH2 = 12,
+	SkillHPO2 = 14,
+	SkillO2 = 18,
+	SkillOP2 = 19,
+	SkillSP1 = 8,
+	SkillNSP2 = 17,
+	SkillOP1 = 9,
+	SkillLP1 = 6,
+	SkillHP1 = 5,
+	SkillOO1 = 4,
+	SkillLP2 = 11,
+	SkillDDDO2 = 15,
+	SkillLLL1 = 1,
+	SkillS1 = 3,
+	SkillNS1 = 7
+}
+Hero20054_Define.EquipmentShieldSpear = 2
+Hero20054_Define.EquipmentHandSpear = 3
+Hero20054_Define.EquipmentSickle = 4
+Hero20054_Define.BulletSpeed = 50
+Hero20054_Define.BulletRangeMax = 50
+Hero20054_Define.WeaponIndex = 1
+Hero20054_Define.BulletSkillDP2Speed1 = 37
+Hero20054_Define.BulletSkillDP2Speed2 = 60
+Hero20054_Define.BulletSkillDP2Acc2 = 360
+Hero20054_Define.BulletSkillDP2RangeMin = 10
+Hero20054_Define.BulletSkillDP2RangeMax = 30
+Hero20054_Define.BulletSkillDP2RangeAdd = 1
+Hero20054_Define.BulletSkillO2Angle = 20
+Hero20054_Define.BulletSkillO2Gravity = -15
+Hero20054_Define.BulletSkillO2RangeMin = 5
+Hero20054_Define.BulletSkillO2RangeMax = 25
+Hero20054_Define.BulletSkillO2Range = 12
+Hero20054_Define.BulletAngleMax = 30
+Hero20054_Define.SkillDP2TimeStart = 0
+Hero20054_Define.SkillDP2TimeEnd = 0.226
+Hero20054_Define.VfxParryBullet = "vfx_20054_parry"
+Hero20054_Define.ParryFrameFreeze = 0.06
+Hero20054_Define.ParryFrameFreezeSpeed = 0
+Hero20054_Define.ParryFrameFadeOut = 0.06
+Hero20054_Define.VfxName_SkillSP2 = "vfx_20054_self_2"
+
+return Hero20054_Define

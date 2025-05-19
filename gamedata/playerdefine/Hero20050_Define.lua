@@ -1,0 +1,50 @@
+﻿-- chunkname: @f:/unity/pascalswager_steam1/assets/GameData/PlayerDefine/Hero20050_Define.lua
+
+Hero20050_Define = {}
+Hero20050_Define.SkillType = {
+	SkillLLL2 = 7,
+	SkillS = 4,
+	SkillO3 = 10,
+	SkillHH2 = 5,
+	SkillH3 = 11,
+	SkillLP2 = 8,
+	SkillLLL3 = 9,
+	SkillHP2 = 6,
+	SkillLLL1 = 1,
+	SkillLP3 = 12,
+	SkillHH1 = 2,
+	SkillLP1 = 3
+}
+Hero20050_Define.BulletTraceRangeMax = 20
+Hero20050_Define.BulletTraceSpeed = 10
+Hero20050_Define.BulletTraceAngleSpeed = 50
+Hero20050_Define.BulletTraceLifeTime = 6
+Hero20050_Define.GradeSpear = 1
+Hero20050_Define.GradeShield = 2
+Hero20050_Define.GradeHand = 3
+Hero20050_Define.EquipmentSpear = 2
+Hero20050_Define.EquipmentShield = 3
+Hero20050_Define.EquipmentHand = 4
+Hero20050_Define.PoseAll = 1
+Hero20050_Define.PoseShieldAndHand = 2
+Hero20050_Define.PoseSpearAndHand = 3
+Hero20050_Define.PoseHand = 4
+Hero20050_Define.PoseShield = 5
+Hero20050_Define.PoseSpear = 6
+Hero20050_Define.PoseSpearAndShield = 7
+Hero20050_Define.ExecutePoseInit = 1
+Hero20050_Define.ExecutePoseSpearToShield = 2
+Hero20050_Define.ExecutePoseShieldToHand = 3
+Hero20050_Define.ExecutePoseSpearToHand = 4
+Hero20050_Define.ExecutePoseHandToDead = 5
+Hero20050_Define.SkillCaptureOffset = 0
+Hero20050_Define.SkillCaptureDistance = 1.3
+Hero20050_Define.SkillCaptureHeight = 1
+Hero20050_Define.HpLockPercent1 = 0.66
+Hero20050_Define.HpLockPercent2 = 0.33
+Hero20050_Define.HpLockPercent3 = 0.5
+Hero20050_Define.HpAddPercent = 0.1
+Hero20050_Define.VfxName_PoseAll = "vfx_20050_self_1"
+Hero20050_Define.VfxName_Eye = "vfx_20050_self_2"
+
+return Hero20050_Define

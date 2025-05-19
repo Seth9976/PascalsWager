@@ -1,0 +1,105 @@
+﻿-- chunkname: @f:/unity/pascalswager_steam1/assets/LuaScript/Logic/Player/Hero20018.lua
+
+require("LuaScript/Logic/Player/AnimalBase")
+require("GameData/PlayerDefine/Hero20018_Define")
+
+Hero20018 = class("Hero20018", AnimalBase)
+
+function Hero20018:initialize(transformSelf, transformModel, id, name, teamId, isHost)
+	AnimalBase.initialize(self, transformSelf, transformModel, id, name, teamId, isHost, AnimalBase_Define.Type.Monster)
+
+	self.bulletSpeedVec3 = Vector3.zero
+	self.bulletSpeedVec3.z = Hero20018_Define.BulletSpeed
+end
+
+function Hero20018:Start()
+	AnimalBase.Start(self)
+end
+
+function Hero20018:Show()
+	AnimalBase.Show(self)
+	AudioCtrl.SetHeroAudio(self.modelName .. "/grunts", self.tfModel, self:GetAnimalId())
+end
+
+function Hero20018:Hide()
+	AnimalBase.Hide(self)
+	AudioCtrl.StopHeroAudio(self.modelName .. "/grunts", self:GetAnimalId())
+end
+
+function Hero20018:UpdateMoveStateLogic()
+	AnimalBase.UpdateMoveStateLogic(self)
+
+	if self:IsDead() == true then
+		return
+	end
+end
+
+function Hero20018:OnSkillOffsetStart()
+	AnimalBase.OnSkillOffsetStart(self)
+
+	if self:IsSkillingSkill() == false then
+		return
+	end
+
+	self:PlaySkillEffect(false)
+	self:PlaySkillAudio()
+end
+
+function Hero20018:OnSkillRecoveryOffsetStart()
+	AnimalBase.OnSkillRecoveryOffsetStart(self)
+
+	if self:IsSkillingRecovery() == false then
+		return
+	end
+end
+
+function Hero20018:OnSkillTrigger(trigger)
+	AnimalBase.OnSkillTrigger(self, trigger)
+
+	if self:IsSkilling() == false then
+		return
+	end
+
+	local skillData = MS_SkillData.GetSkillData(self.heroId, self.skillIndex, self.skillCombo)
+
+	if self.skillIndex == Hero20018_Define.SkillType.SkillH and self.skillCombo == 1 and trigger == 1 then
+		local startPos = self:GetAttackBoxPosition(self.skillIndex, self.skillCombo)
+		local targetPos = GameAI.GetChestTargetByStraightLine(self, startPos, Hero20018_Define.BulletRangeMax, Hero20018_Define.BulletRangeMax, Hero20018_Define.BulletRangeMax, AnimalBase_Define.ShootTargetAngleMax)
+
+		if self.controllerBullet ~= nil then
+			local bulletIndex = self.controllerBullet:CreateBullet(ControllerBullet.BulletType.StraightLine, self, skillData, nil, startPos, targetPos, self.bulletSpeedVec3, Vector3.s_zero)
+			local bullet = self.controllerBullet:GetBullet(bulletIndex)
+
+			if bullet ~= nil then
+				bullet:Ready()
+				bullet:Start()
+			end
+		end
+	end
+end
+
+function Hero20018:OnSkillEnd(skillIndexNext, skillComboNext)
+	if self.skillIndex == Hero20018_Define.SkillType.SkillNSP and self.skillCombo == 2 then
+		self:ClearSkillEffectLoopAll()
+		self:ClearSkillEffectAll()
+		self:StopSkillAudio()
+	end
+
+	AnimalBase.OnSkillEnd(self, skillIndexNext, skillComboNext)
+end
+
+function Hero20018:SetUI()
+	AnimalBase.SetUI(self)
+end
+
+function Hero20018:GetShootDistanceMax()
+	return Hero20018_Define.BulletRangeMax
+end
+
+function Hero20018:Exit()
+	self.bulletSpeedVec3 = nil
+
+	AnimalBase.Exit(self)
+end
+
+return Hero20018

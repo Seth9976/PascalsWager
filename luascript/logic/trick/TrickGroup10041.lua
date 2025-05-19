@@ -1,0 +1,41 @@
+﻿-- chunkname: @f:/unity/pascalswager_steam1/assets/LuaScript/Logic/Trick/TrickGroup10041.lua
+
+require("LuaScript/Logic/Trick/TrickGroupBase")
+
+TrickGroup10041 = class("TrickGroup10041", TrickGroupBase)
+
+function TrickGroup10041:initialize(scene)
+	TrickGroupBase.initialize(self, scene)
+
+	self.damageType = AnimalBase_Define.DamageType.None
+	self.hitType = AnimalBase_Define.HitType.None
+	self.playMode = TrickGroupBase.PlayMode.Single
+end
+
+function TrickGroup10041:Open(pos, rot)
+	TrickGroupBase.Open(self, pos, rot)
+
+	if self:CheckOpen() == false then
+		return false
+	end
+
+	local trick = self:OpenTrickSingle(pos, rot)
+
+	if trick == nil then
+		return false
+	end
+
+	self:Start()
+
+	return true
+end
+
+function TrickGroup10041:Update()
+	TrickGroupBase.Update(self)
+
+	if self:IsOpening() == false then
+		return
+	end
+end
+
+return TrickGroup10041

@@ -1,0 +1,65 @@
+﻿-- chunkname: @f:/unity/pascalswager_steam1/assets/GameData/PlayerDefine/Hero20040_Define.lua
+
+Hero20040_Define = {}
+Hero20040_Define.SkillType = {
+	SkillSP3 = 12,
+	SkillD = 17,
+	SkillNOP = 16,
+	SkillH1 = 4,
+	SkillNL = 2,
+	SkillLLL = 11,
+	SkillOP = 9,
+	SkillOOO = 13,
+	SkillNSP2 = 8,
+	SkillH3 = 10,
+	SkillL = 1,
+	SkillNHP = 15,
+	SkillND = 18,
+	SkillO = 3,
+	SkillHP = 5,
+	SkillDP3 = 19,
+	SkillNS2 = 7,
+	SkillS1 = 6,
+	SkillNLP = 14
+}
+Hero20040_Define.Status1_TargetDistance = 0.2
+Hero20040_Define.CallAnimal_SkillPointStart = 2
+Hero20040_Define.CallAnimal_SkillPointEnd = 7
+Hero20040_Define.BulletSkillH1Speed = 40
+Hero20040_Define.BulletSkillNSP2Speed = 25
+Hero20040_Define.BulletSkillNSP2Num = 3
+Hero20040_Define.BulletSkillNSP2IntervalTime = 1
+Hero20040_Define.BulletSkillNSP2RangeMin = 0.1
+Hero20040_Define.BulletSkillNSP2RangeMax = 30
+Hero20040_Define.BulletSkillNS2Num = 6
+Hero20040_Define.BulletSkillNS2RangeMax = 20
+Hero20040_Define.BulletSkillNS2Speed = 6
+Hero20040_Define.BulletSkillNS2AngleSpeed = 80
+Hero20040_Define.BulletSkillNS2LifeTime = 5
+Hero20040_Define.BulletSkillNS2IntervalTime = 0.4
+Hero20040_Define.BulletRangeMax = 30
+Hero20040_Define.SkillCaptureOffset = 0
+Hero20040_Define.SkillCaptureDistance = 1.3
+Hero20040_Define.SkillCaptureHeight = 1.2
+Hero20040_Define.TrickId_SkillO = 10018
+Hero20040_Define.TrickId_SkillHP = 10019
+Hero20040_Define.TrickId_SkillHP_DelayStop = 0.5
+Hero20040_Define.TrickId_SkillOP = 10020
+Hero20040_Define.TrickId_SkillOP2 = 10032
+Hero20040_Define.TrickId_SkillNHP = 10021
+Hero20040_Define.GradeForceMove = 1
+Hero20040_Define.GradeCall = 2
+Hero20040_Define.GradeSan = 3
+Hero20040_Define.VarietyHost = 1
+Hero20040_Define.VarietyCall1 = 2
+Hero20040_Define.VarietyCall2 = 3
+Hero20040_Define.VarietyCall3 = 4
+Hero20040_Define.SkillNOPHpPer = 0.2
+Hero20040_Define.SkillNOPExposureTime = 10
+Hero20040_Define.AutoExposureTarget = 7
+Hero20040_Define.AutoExposureSpeedUp = 2
+Hero20040_Define.AutoExposureSpeedDown = 4
+Hero20040_Define.WeaponId_Sword = 1
+Hero20040_Define.DeadAlphaChangeSpeed = 0.3
+
+return Hero20040_Define

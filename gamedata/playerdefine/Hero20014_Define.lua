@@ -1,0 +1,53 @@
+﻿-- chunkname: @f:/unity/pascalswager_steam1/assets/GameData/PlayerDefine/Hero20014_Define.lua
+
+Hero20014_Define = {}
+Hero20014_Define.SkillType = {
+	SkillLLL2 = 4,
+	SkillHP2 = 6,
+	SkillDP2 = 10,
+	SkillD2 = 12,
+	SkillHH2 = 8,
+	SkillSP3 = 15,
+	SkillLM3 = 18,
+	SkillDP3 = 21,
+	SkillOP = 13,
+	SkillSP1 = 14,
+	SkillDM3 = 22,
+	SkillLP3 = 17,
+	SkillD1 = 11,
+	SkillHP3 = 19,
+	SkillLP1 = 1,
+	SkillHP1 = 5,
+	SkillLP2 = 2,
+	SkillS = 16,
+	SkillHH3 = 20,
+	SkillLLL1 = 3,
+	SkillDP1 = 9,
+	SkillHH1 = 7
+}
+Hero20014_Define.BulletDPExplodeRange = 1.1
+Hero20014_Define.BulletDPSpeed1 = 40
+Hero20014_Define.BulletDPSpeed2 = 60
+Hero20014_Define.BulletDPUpSpeed = 30
+Hero20014_Define.BulletDPAcc2 = 360
+Hero20014_Define.BulletSPSpeed = 25
+Hero20014_Define.BulletSAngle = 45
+Hero20014_Define.BulletSGravity = -20
+Hero20014_Define.BulletAngleMax = 15
+Hero20014_Define.BulletRangeMax = 40
+Hero20014_Define.BulletDPRangeMin = 16
+Hero20014_Define.BulletDPRangeMax = 16
+Hero20014_Define.BulletDPRange = 15
+Hero20014_Define.BulletSRangeMin = 4
+Hero20014_Define.BulletSRangeMax = 20
+Hero20014_Define.BulletSRange = 10
+Hero20014_Define.BulletDPFreezeTime = 0.1
+Hero20014_Define.EnchantTime = 15
+Hero20014_Define.SkillCaptureOffset = 0
+Hero20014_Define.SkillCaptureDistance = 0.2
+Hero20014_Define.SkillCaptureHeight = 1.2
+Hero20014_Define.WeaponIndexLeft = 1
+Hero20014_Define.WeaponIndexRight = 2
+Hero20014_Define.TrickId = 10001
+
+return Hero20014_Define
